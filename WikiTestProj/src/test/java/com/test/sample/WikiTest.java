@@ -50,6 +50,8 @@ public class WikiTest {
 	public void verifyWikiLanguages(String langShortName, String language) throws Exception {
 		
 		System.out.println("Wiki Page Launched");
+		
+		//Click on the language selection dropdown
 		driver.findElement(By.id("searchLanguage")).click();
 
 		System.out.println("Language Short name ---> "+ driver.findElement(By.id("jsLangLabel")).getText());
